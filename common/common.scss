@@ -1,5 +1,120 @@
+@import "theme_variables";
+
 .b-header {
+  width: 100%;
+  background-color: #3B7486;
+  height: 48px;
+  margin-bottom: 0;
 
-    background-color: #3B7486;
+  .contents {
+    margin: 8px 0;
+  }
 
+  .title {
+    float: left;
+    margin-right: 24px;
+    a {
+      color: $secondary;
+    }
+    &:visited {
+      color: $secondary;
+    }
+    .rtl & {
+      float: right;
+      margin-left: 24px;
+      margin-right: 0;
+    }
+  }
+
+  #brand-logo {
+    max-height: 32px;
+  }
+
+  #brand-text-logo {
+    line-height: 32px;
+    margin: 0;
+  }
+
+  nav.links {
+    float: left;
+    .rtl & {
+      float: right;
+    }
+  }
+
+  .nav-pills {
+    margin-bottom: 0;
+    > li > a {
+      color: $secondary;
+      line-height: 22px;
+      &:hover {
+        color: $quaternary;
+        background-color: dark-light-diff($quaternary, $tertiary, -70%, 70%);
+      }
+      &.active > a, > a.active {
+        color: $secondary;
+        background-color: $quaternary;
+      }
+    }
+  }
+
+  .panel {
+    float: right;
+    position: relative;
+    .rtl & {
+      float: left;
+    }
+  }
+
+  .menu-panel {
+    position: absolute;
+    top: 100%;
+    right: -10px;
+    z-index: 1001;
+    .rtl & {
+      right: inherit;
+      left: -10px;
+    }
+  }
+
+  ul.icons {
+    text-align: center;
+    margin: 0 0 0 5px;
+    > li {
+      float: left;
+      list-style: none;
+    }
+    a, [class^="fa fa-"] {
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 28px;
+      display: inline-block;
+      margin: 2px;
+    }
+    .rtl & {
+        margin: 0 5px 0 0;
+      > li {
+        float: right;
+      }
+    }
+  }
+
+  .panel > ul.icons {
+    float: right;
+    a, [class^="fa fa-"] {
+      color: $secondary;
+    }
+    .rtl & {
+      float: left;
+    }
+  }
+}
+
+.ember-application .d-header {
+    margin-top: 48px;
+}
+
+.docked .ember-application .d-header {
+    margin-top: 0;
 }
