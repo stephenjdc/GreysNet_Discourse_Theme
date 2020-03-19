@@ -145,10 +145,15 @@ body {
     color: white;
 }
 
-.d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
-    color: $menuColor;
-    background-color: $menuHighlight;
-}
+// .d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
+//     color: $menuColor;
+//     // background-color: $menuHighlight;
+// }
+
+// .d-header-icons .icon:active {
+//     background-color: $menuHighlight;
+
+// }
 
 .ember-application .d-header {
     pointer-events: none;
