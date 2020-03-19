@@ -1,14 +1,15 @@
 @import "theme_variables";
+$menuColor: #3B7486;
+$menuHighlight: white;
 
 body {
     font-family: 'Lato', sans-serif;
 
 }
 
-
 .b-header {
   width: 100%;
-  background-color: #3B7486;
+  background-color: $menuColor;
   height: 35pt;
   margin-bottom: 0;
   padding-top: 12pt;
@@ -23,10 +24,10 @@ body {
     margin-right: 24px;
     font-size: 2.3em;
     a {
-      color: $secondary;
+      color: $menuHighlight;
     }
     &:visited {
-      color: $secondary;
+      color: $menuHighlight;
     }
     .rtl & {
       float: right;
@@ -58,12 +59,12 @@ body {
       color: $secondary;
       line-height: 22px;
       &:hover {
-        color: $quaternary;
-        background-color: dark-light-diff($quaternary, $tertiary, -70%, 70%);
+        color: $menuColor;
+        background-color: dark-light-diff($menuHighlight, $menuHighlight, -70%, 70%);
       }
       &.active > a, > a.active {
-        color: $secondary;
-        background-color: $quaternary;
+        color: $menuColor;
+        background-color: $menuHighlight;
       }
     }
   }
@@ -146,4 +147,10 @@ body {
 
 .ember-application .d-header {
     pointer-events: none;
+}
+
+.b-header nav.links {
+    font-size: 1.2em;
+    margin-top: 8pt;
+    margin-left: 15pt;
 }
