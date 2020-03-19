@@ -9,8 +9,10 @@ body {
 .b-header {
   width: 100%;
   background-color: #3B7486;
-  height: 48px;
+  height: 35pt;
   margin-bottom: 0;
+  padding-top: 12pt;
+  padding-bottom: 13pt;
 
   .contents {
     margin: 8px 0;
@@ -19,6 +21,7 @@ body {
   .title {
     float: left;
     margin-right: 24px;
+    font-size: 2.3em;
     a {
       color: $secondary;
     }
@@ -50,6 +53,7 @@ body {
 
   .nav-pills {
     margin-bottom: 0;
+    font-weight: bold;
     > li > a {
       color: $secondary;
       line-height: 22px;
@@ -118,9 +122,15 @@ body {
 }
 
 .ember-application .d-header {
-    margin-top: 48px;
+    margin-top: 60pt;
 }
 
 .docked .ember-application .d-header {
     margin-top: 0;
+}
+
+.d-header #site-logo {
+
+    display: none;
+
 }
