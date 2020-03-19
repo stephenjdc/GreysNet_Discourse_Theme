@@ -145,6 +145,10 @@ body {
     color: white;
 }
 
+.d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
+    color: $menuHighlight;
+}
+
 .ember-application .d-header {
     pointer-events: none;
 }
