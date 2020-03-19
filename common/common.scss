@@ -134,3 +134,15 @@ body {
     display: none;
 
 }
+
+.d-header-icons {
+    pointer-events: all;
+}
+
+.d-header-icons .d-icon {
+    color: white;
+}
+
+.ember-application .d-header {
+    pointer-events: none;
+}
