@@ -259,3 +259,7 @@ p {
     padding: 0 0 20pt 0;
     font-size: 1.5em;
 }
+
+div[class^="category-title-header"] {
+    padding-top: 0;
+}
