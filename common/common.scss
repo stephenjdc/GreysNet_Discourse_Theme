@@ -172,3 +172,28 @@ body {
 #main-outlet {
     padding-top: 2.3em;
 }
+
+.topic-list th:last-of-type, .topic-list td:last-of-type {
+    display: none;
+}
+
+.topic-list .views {
+    display: none;
+}
+
+.suggested-topics-message {
+    margin-top: 20pt;
+}
+
+.regular .contents {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.cooked small, .d-editor-preview small {
+    font-style: italic;
+    font-size: 1em;
+}
