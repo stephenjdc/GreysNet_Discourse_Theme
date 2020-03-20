@@ -145,6 +145,10 @@ body {
     pointer-events: all;
 }
 
+.d-header .hamburger-panel, .d-header .user-menu, .d-header .search-menu {
+    pointer-events: all;
+}
+
 .d-header-icons .d-icon {
     color: white;
 }
