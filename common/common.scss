@@ -127,6 +127,11 @@ body {
     background-color: transparent;
 }
 
+.docked .ember-application .d-header {
+    margin-top: -46pt;
+}
+
+
 .d-header {
     position: relative;
     box-shadow: none;
