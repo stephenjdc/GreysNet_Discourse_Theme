@@ -123,8 +123,13 @@ body {
 }
 
 .ember-application .d-header {
-    margin-top: 15pt;
+    margin-top: -46pt;
     background-color: transparent;
+}
+
+.d-header {
+    position: relative;
+    box-shadow: none;
 }
 
 .docked .ember-application .d-header {
@@ -182,6 +187,10 @@ body {
 }
 
 .topic-list .views {
+    display: none;
+}
+
+.topic-map {
     display: none;
 }
 
