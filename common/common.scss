@@ -123,17 +123,17 @@ body {
 }
 
 .ember-application .d-header {
-    margin-top: -46pt;
     background-color: transparent;
 }
 
-.docked .ember-application .d-header {
-    margin-top: -46pt;
-}
+// .docked .ember-application .d-header {
+//     margin-top: -46pt;
+// }
 
 
 .d-header {
-    position: relative;
+    position: absolute;
+    top: 15pt;
     box-shadow: none;
 }
 
