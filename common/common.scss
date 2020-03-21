@@ -264,3 +264,16 @@ p {
 .category-title-header {
     padding-top: 0;
 }
+
+.custom-header-links .headerLink a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.d-header .btn-small {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
