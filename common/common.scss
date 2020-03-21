@@ -280,6 +280,12 @@ p {
     font-weight: bold;
     font-size: 1.2em;
     text-transform: lowercase;
+    padding: 2pt 4pt 2pt 4pt;
+}
+
+.d-header .btn-small:hover {
+    background-color: white;
+    color: $menuColor;
 }
 
 .d-header .btn-small:hover {
