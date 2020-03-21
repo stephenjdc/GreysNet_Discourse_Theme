@@ -148,17 +148,17 @@ body {
 
 }
 
-.d-header-icons {
-    pointer-events: all;
-}
+// .d-header-icons {
+//     pointer-events: all;
+// }
 
-.d-header .header-buttons {
-    pointer-events: all;
-}
+// .d-header .header-buttons {
+//     pointer-events: all;
+// }
 
-.d-header .hamburger-panel, .d-header .user-menu, .d-header .search-menu {
-    pointer-events: all;
-}
+// .d-header .hamburger-panel, .d-header .user-menu, .d-header .search-menu {
+//     pointer-events: all;
+// }
 
 .d-header-icons .d-icon {
     color: white;
@@ -174,9 +174,9 @@ body {
 
 // }
 
-.ember-application .d-header {
-    pointer-events: none;
-}
+// .ember-application .d-header {
+//     pointer-events: none;
+// }
 
 .b-header nav.links {
     font-size: 1.2em;
@@ -280,4 +280,9 @@ p {
     font-weight: bold;
     font-size: 1.2em;
     text-transform: lowercase;
+}
+
+.d-header .btn-small:hover {
+    background-color: white;
+    color: $menuColor;
 }
