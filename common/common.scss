@@ -329,13 +329,17 @@ a#search-button.icon {
 }
 
 #toggle-hamburger-menu {
-    &:before{
+
+    // padding-left: 3pt;
+    // padding-right: 3pt;
+    // padding-top: 
+    padding: 2pt 4pt 2pt 4pt;
+
+    &:before {
         content: "menu";
         font-weight: bold;
         font-size: 1.2em;
         color: white;
-        padding-left: 3pt;
-        padding-right: 3pt;
     }
     svg {
         display: none;
