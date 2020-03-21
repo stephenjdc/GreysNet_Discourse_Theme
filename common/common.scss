@@ -341,12 +341,13 @@ a#search-button.icon {
         font-size: 1.2em;
         color: white;
     }
-    svg {
-        display: none;
-    }
-
     &:hover {
         background-color: white;
         color: $menuColor;
     }
+
+    svg {
+        display: none;
+    }
+
 }
