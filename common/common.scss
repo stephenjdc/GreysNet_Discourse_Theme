@@ -290,11 +290,11 @@ p {
 
 .custom-header-links .headerLink:hover {
     background-color: white;
-    color: $menuColor;
+    color: $menuColor !important;
 }
 
 .custom-header-links .headerLink a:hover {
-    color: $menuColor;
+    color: $menuColor !important;
 }
 
 .d-header .btn-small:hover {
