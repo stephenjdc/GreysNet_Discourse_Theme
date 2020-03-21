@@ -138,6 +138,10 @@ body {
     position: relative;
 }
 
+.d-header .title {
+    color: white;
+}
+
 .docked .d-header {
     position: relative;
 }
@@ -308,4 +312,8 @@ ol.category-breadcrumb {
 
 a#search-button.icon {
     display: none;
+}
+
+.header-dropdown-toggle .fa-bars:before {
+    content: "menu"; // font awesome code for horizontal ellipsis
 }
