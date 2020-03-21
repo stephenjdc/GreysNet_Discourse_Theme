@@ -286,3 +286,11 @@ p {
     background-color: white;
     color: $menuColor;
 }
+
+ol.category-breadcrumb {
+    display: none;
+}
+
+a#search-button.icon {
+    display: none;
+}
