@@ -328,6 +328,11 @@ a#search-button.icon {
     display: none;
 }
 
-.header-dropdown-toggle .fa-bars:before {
-    content: "\f141"; // font awesome code for horizontal ellipsis
+#toggle-hamburger-menu {
+    &:before{
+        content: "menu";
+    }
+    svg {
+        display: none;
+    }
 }
