@@ -280,7 +280,7 @@ p {
     font-weight: bold;
     font-size: 1.2em;
     text-transform: lowercase;
-    padding: 2pt 4pt 2pt 4pt;
+    // padding: 2pt 4pt 2pt 4pt;
 }
 
 .custom-header-links .headerLink {
@@ -290,6 +290,10 @@ p {
 
 .custom-header-links .headerLink:hover {
     background-color: white;
+    color: $menuColor;
+}
+
+.custom-header-links .headerLink a:hover {
     color: $menuColor;
 }
 
