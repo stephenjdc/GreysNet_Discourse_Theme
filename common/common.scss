@@ -334,8 +334,15 @@ a#search-button.icon {
         font-weight: bold;
         font-size: 1.2em;
         color: white;
+        padding-left: 3pt;
+        padding-right: 3pt;
     }
     svg {
         display: none;
+    }
+
+    &:hover {
+        background-color: white;
+        color: $menuColor;
     }
 }
