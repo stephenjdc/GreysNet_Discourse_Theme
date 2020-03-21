@@ -142,6 +142,19 @@ body {
     color: white;
 }
 
+.d-header #site-text-logo {
+    color: white;
+}
+
+.d-header #site-text-logo a {
+    color: white;
+}
+
+
+.d-header #site-text-logo a:visited {
+    color: white;
+}
+
 .docked .d-header {
     position: relative;
 }
@@ -314,6 +327,6 @@ a#search-button.icon {
     display: none;
 }
 
-.header-dropdown-toggle .fa-bars:before {
+#toggle-hamburger-menu {
     content: "menu"; // font awesome code for horizontal ellipsis
 }
