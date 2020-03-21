@@ -283,7 +283,12 @@ p {
     padding: 2pt 4pt 2pt 4pt;
 }
 
-.d-header .btn-small:hover {
+.custom-header-links .headerLink {
+    padding: 2pt 4pt 2pt 4pt;
+    transition: background-color 0.3s;
+}
+
+.custom-header-links .headerLink:hover {
     background-color: white;
     color: $menuColor;
 }
