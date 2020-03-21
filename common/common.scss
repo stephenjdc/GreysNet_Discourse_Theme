@@ -266,9 +266,13 @@ p {
 }
 
 .custom-header-links .headerLink a {
-    color: white;
+    color: white !important;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+.custom-header-links .headerLink a:visited {
+    color: inherit;
 }
 
 .d-header .btn-small {
