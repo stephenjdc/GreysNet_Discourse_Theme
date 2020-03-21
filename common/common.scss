@@ -331,6 +331,9 @@ a#search-button.icon {
 #toggle-hamburger-menu {
     &:before{
         content: "menu";
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
     }
     svg {
         display: none;
