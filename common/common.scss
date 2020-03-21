@@ -340,8 +340,13 @@ a#search-button.icon {
         font-weight: bold;
         font-size: 1.2em;
         color: white;
+
+        &:hover {
+            background-color: white;
+            color: $menuColor;
+        }    
     }
-    &:hover {
+        &:hover {
         background-color: white;
         color: $menuColor;
     }
