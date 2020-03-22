@@ -328,18 +328,14 @@ a#search-button.icon {
     display: none;
 }
 
-#toggle-hamburger-menu:before:hover {
-    color: $menuColor;
-}
-
 #toggle-hamburger-menu {
 
-    // padding-left: 3pt;
-    // padding-right: 3pt;
-    // padding-top: 
-    padding: 2.5pt 4pt 2pt 4pt;
+    padding: 3pt 4pt 5.5pt 4pt;
     font-size: 1.14em;
     margin-right: 10pt;
+    margin-top: 8.5pt;
+    width: auto;
+    height: auto;
 
     &:before {
         content: "menu";
@@ -349,12 +345,13 @@ a#search-button.icon {
 
         &:hover {
             background-color: white;
+            color: $menuColor;
         }    
     }
-        &:hover {
-        background-color: white;
-        color: $menuColor;
-    }
+    //     &:hover {
+    //     background-color: white;
+    //     color: $menuColor;
+    // }
 
     svg {
         display: none;
