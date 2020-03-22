@@ -333,7 +333,7 @@ a#search-button.icon {
     padding: 3pt 4pt 5.5pt 4pt;
     font-size: 1.14em;
     margin-right: 10pt;
-    margin-top: 8.5pt;
+    margin-top: 4.5pt;
     width: auto;
     height: auto;
 
@@ -343,15 +343,18 @@ a#search-button.icon {
         font-size: 1.2em;
         color: white;
 
-        &:hover {
+    }
+    
+    &:hover {
+        background-color: white;
+        color: $menuColor;
+
+        &:before {
             background-color: white;
             color: $menuColor;
         }    
+
     }
-    //     &:hover {
-    //     background-color: white;
-    //     color: $menuColor;
-    // }
 
     svg {
         display: none;
