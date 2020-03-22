@@ -295,7 +295,7 @@ p {
 .d-header .btn-small {
     background-color: transparent;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-transform: lowercase;
     // padding: 2pt 4pt 2pt 4pt;
 }
@@ -356,6 +356,16 @@ a#search-button.icon {
 
     }
 
+    &:active {
+        background-color: white;
+        color: $menuColor;
+
+        &:before {
+            // background-color: white;
+            color: $menuColor;
+        }    
+    }
+
     svg {
         display: none;
     }
@@ -366,4 +376,6 @@ a#search-button.icon {
     display: block;
     border-radius: 5pt;
     margin: 5pt 0 5pt 0;
+    width: 100%;
+    height: auto;
 }
