@@ -328,6 +328,10 @@ a#search-button.icon {
     display: none;
 }
 
+#toggle-hamburger-menu:before:hover {
+    color: $menuColor;
+}
+
 #toggle-hamburger-menu {
 
     // padding-left: 3pt;
@@ -345,7 +349,6 @@ a#search-button.icon {
 
         &:hover {
             background-color: white;
-            color: $menuColor;
         }    
     }
         &:hover {
