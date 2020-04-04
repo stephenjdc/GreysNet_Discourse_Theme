@@ -6,6 +6,51 @@
     display: none;
 ">The voice of older people online</div>
 
+
+<div id='topCategories' style='display: none'>
+
+    <div class='topCategory'>
+        <div class='categoryImage' style='background-image: url("https://greysnet.com/wp-content/uploads/2020/04/Health-1.jpg")'></div>
+        <div class='categoryTitle'>
+            Health
+        </div>
+        <div class='categoryDescription'>
+            Everyone’s favourite subject, from aches and pains to stresses and strains.</div>
+        <a href='https://forum.greysnet.com/c/health' class='categoryButton'>See more</a>
+    </div>
+
+    <div class='topCategory'>
+        <div class='categoryImage' style='background-image: url("https://greysnet.com/wp-content/uploads/2020/04/Hobbies.jpg")'></div>
+        <div class='categoryTitle'>
+            Hobbies
+        </div>
+        <div class='categoryDescription'>
+            Banter about everything from beekeeping to birdwatching.</div>
+        <a href='https://forum.greysnet.com/c/interests' class='categoryButton'>See more</a>
+    </div>
+
+    <div class='topCategory'>
+        <div class='categoryImage' style='background-image: url("https://greysnet.com/wp-content/uploads/2020/04/Entertainment-1.jpg")'></div>
+        <div class='categoryTitle'>
+            Entertainment
+        </div>
+        <div class='categoryDescription'>
+            Everything from books to film, television, theatre, music and more.        </div>
+        <a href='https://forum.greysnet.com/c/entertainment' class='categoryButton'>See more</a>
+    </div>
+
+    <div class='topCategory'>
+        <div class='categoryImage' style='background-image: url("https://greysnet.com/wp-content/uploads/2020/04/Thats-Life.jpg")'></div>
+        <div class='categoryTitle'>
+            That's Life
+        </div>
+        <div class='categoryDescription'>
+            Share amusing stories and banter about everyday life.</div>
+        <a href='https://forum.greysnet.com/c/life' class='categoryButton'>See more</a>
+    </div>
+
+</div>
+
 <script>
 
 window.onload = function() {
@@ -19,6 +64,17 @@ window.onload = function() {
                 tagline.style.display = "block"
                 wrap[0].appendChild(tagline)
             }
+        }
+    }
+
+    var topCategories = document.getElementById('topCategories')
+    var mainOutlet = document.getElementById('main-outlet')
+
+    if (topCategories != null) {
+        if (mainOutlet != null) {
+            topCategories.parentElement.removeChild(topCategories);
+            topCategories.style.display = "block"
+            mainOutlet.insertBefore(topCategories, mainOutlet.firstChild)
         }
     }
 }
