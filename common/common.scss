@@ -1,11 +1,16 @@
 .d-header #site-text-logo {
     text-transform: lowercase;
-    font-size: 1.3em;
+    font-size: 3.4666em;
+    letter-spacing: -1pt;
 }
 
 .d-header {
     background-color: transparent;
     box-shadow: none;
+    position: relative;
+}
+
+.docked .d-header {
     position: relative;
 }
 
