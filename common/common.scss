@@ -182,3 +182,17 @@ p small {
 .cooked small, .d-editor-preview small {
     font-size: 1em;
 }
+
+.latest-topic-list-item .main-link {
+    font-size: 1.2em;
+}
+
+.badge-wrapper .badge-category .category-name {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 6pt;
+}
