@@ -67,6 +67,19 @@ window.onload = function() {
         }
     }
 
+    var topCategories = document.getElementById('topCategories')
+    var mainOutlet = document.getElementById('main-outlet')
+
+    console.log("showing top categories")
+    if (topCategories != null) {
+        if (mainOutlet != null) {
+            if (!topCategories.classList.contains('added')) {
+                topCategories.parentElement.removeChild(topCategories);
+                mainOutlet.insertBefore(topCategories, mainOutlet.firstChild)
+                topCategories.classList.add('added')
+            }
+        }
+    }
 }
 
 $( document ).ajaxComplete(function() {
@@ -85,7 +98,6 @@ $( document ).ajaxComplete(function() {
         }
     }
 
-    var topCategories = document.getElementById('topCategories')
     if (window.location.href == 'https://forum.greysnet.com/' || window.location.href == 'https://forum.greysnet.com') {
         console.log("showing top categories")
         topCategories.style.display = 'block'
