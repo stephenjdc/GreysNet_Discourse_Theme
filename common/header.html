@@ -70,11 +70,13 @@ window.onload = function() {
     var topCategories = document.getElementById('topCategories')
     var mainOutlet = document.getElementById('main-outlet')
 
-    if (topCategories != null) {
-        if (mainOutlet != null) {
-            topCategories.parentElement.removeChild(topCategories);
-            topCategories.style.display = "block"
-            mainOutlet.insertBefore(topCategories, mainOutlet.firstChild)
+    if (window.location == 'https://forum.greysnet.com') {
+        if (topCategories != null) {
+            if (mainOutlet != null) {
+                topCategories.parentElement.removeChild(topCategories);
+                topCategories.style.display = "block"
+                mainOutlet.insertBefore(topCategories, mainOutlet.firstChild)
+            }
         }
     }
 }
