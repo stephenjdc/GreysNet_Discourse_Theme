@@ -1,7 +1,10 @@
+$menuColor: #5caeb1;
+
 .d-header #site-text-logo {
     text-transform: lowercase;
     font-size: 3.4666em;
     letter-spacing: -1pt;
+    color: $menuColor;
 }
 
 .d-header {
@@ -16,8 +19,31 @@
 
 .d-header>.wrap {
     margin-top: 50pt;
+    display: inline-block;
+    align-items: initial;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .wrap {
     max-width: 1300px;
+}
+
+.d-header .title {
+    display: inline-block;
+    align-items: unset;
+    height: auto;
+}
+
+.d-header .panel {
+    display: inline-block;
+
+}
+
+.d-header .header-buttons {
+    display: inline-block;
+}
+
+.d-header-icons {
+    display: inline-block;
 }
