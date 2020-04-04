@@ -232,3 +232,50 @@ p small {
 .tagline {
     margin-top: 4pt;
 }
+
+.topCategories {
+    display: block;
+    margin-bottom: 80pt;
+    align-content: center;
+    text-align: center;
+}
+
+.topCategory {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2% 2% 2% 2%;
+    text-align: left;
+}
+
+.categoryTitle {
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: 5pt;
+    margin-bottom: 3pt;
+    font-weight: bold;
+}
+
+.categoryDescription {
+    text-align: left;
+}
+
+#main-outlet {
+    padding-top: 30pt;
+}
+
+a.categoryButton {
+    background-color: #5caeb1;
+    padding: 5pt 7pt 5pt 7pt;
+    display: inline-block;
+    border-radius: 4pt;
+    margin-top: 7pt;
+}
+
+.categoryButton a {
+    color: white
+}
+
+.categoryButton a:visited {
+    color: white;
+}
