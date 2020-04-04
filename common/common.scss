@@ -11,6 +11,11 @@ $menuColor: #5caeb1;
     background-color: transparent;
     box-shadow: none;
     position: relative;
+    left: unset;
+    height: auto;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: center;
 }
 
 .docked .d-header {
@@ -21,6 +26,10 @@ $menuColor: #5caeb1;
     margin-top: 50pt;
     display: inline-block;
     align-items: initial;
+}
+
+.d-header>.wrap .contents {
+    display: inline-block;
 }
 
 .d-header .title {
@@ -50,16 +59,18 @@ $menuColor: #5caeb1;
     width: 100%;
 }
 
-@media (min-width: 1330px) {
+
+@media (min-width: 576px) {
     .wrap {
-        max-width: 1300px;
+        max-width: 540px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .wrap {
-        max-width: 1140px;
+        max-width: 720px;
     }
+    
 }
 
 @media (min-width: 992px) {
@@ -69,14 +80,15 @@ $menuColor: #5caeb1;
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .wrap {
-        max-width: 720px;
-    }
-    
-}
-@media (min-width: 576px) {
-    .wrap {
-        max-width: 540px;
+        max-width: 1140px;
     }
 }
+
+@media (min-width: 1330px) {
+    .wrap {
+        max-width: 1300px;
+    }
+}
+
