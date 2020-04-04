@@ -139,8 +139,17 @@ nav.post-controls button.bookmark {
 }
 
 #topic-title h1 a {
-    font-size: 1.7em;
-    display: block;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 10pt;
+}
+
+.small-action {
+    display: none;
+}
+
+.title-wrapper .topic-statuses {
+    display: none;
 }
 
 #topic-title .title-wrapper a.topic-featured-link {
