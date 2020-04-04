@@ -178,3 +178,7 @@ p small {
     font-size: 1em;
     font-weight: bold;
 }
+
+.cooked small, .d-editor-preview small {
+    font-size: 1em;
+}
