@@ -1,6 +1,26 @@
-<!-- <script type="text/discourse-plugin" version="0.4">
-    api.replaceIcon('hamburger-menu', '');
-</script> -->
+<div id='tagline' class="tagline" style="
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #666666;
+    display: none;
+">The voice of older people online</div>
 
+<script>
 
-this is a test-----asdkjalskdjalk
+window.onload = function() {
+    var tagline = document.getElementById('tagline')
+    var wrap = document.getElementsByClassName('wrap')
+
+    if (tagline != null) {
+        if (wrap != null) {
+            if (wrap.length > 0) {
+                tagline.parentElement.removeChild(tagline);
+                tagline.style.display = "block"
+                wrap.appendChild(tagline);
+            }
+        }
+    }
+}
+
+</script>
