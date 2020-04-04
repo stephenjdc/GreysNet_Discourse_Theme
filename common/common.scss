@@ -33,13 +33,15 @@ $menuColor: #5caeb1;
 }
 
 .d-header .title {
-    display: inline-block;
-    align-items: unset;
-    height: auto;
+    // display: inline-block;
+    // align-items: unset;
+    // height: auto;
+    float: left;
 }
 
 .d-header .panel {
-    display: inline-block;
+    // display: inline-block;
+    float: right;
 
 }
 
@@ -67,6 +69,25 @@ $menuColor: #5caeb1;
     display: none;
 }
 
+.categories-and-latest .topic-featured-link, .categories-and-top .topic-featured-link {
+    display: none;
+}
+
+.nav-pills>li a.active {
+    background-color: $menuColor;
+}
+
+.menu-panel .panel-body {
+    text-align: left;
+}
+
+.d-header-icons {
+    display: block;
+}
+
+.d-header-icons>li {
+    float: none;
+}
 
 @media (min-width: 576px) {
     .wrap {
