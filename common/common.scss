@@ -146,6 +146,14 @@ nav.post-controls button.bookmark {
     display: none;
 }
 
-.widget-button .btn-flat .share .no-text .btn-icon {
+button.widget-button.btn-flat.share.no-text.btn-icon {
+    display: none;
+}
+
+.timeline-footer-controls {
+    display: none;
+}
+
+button#topic-footer-button-share-and-invite {
     display: none;
 }
