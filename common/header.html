@@ -71,6 +71,7 @@ window.onload = function() {
     var mainOutlet = document.getElementById('main-outlet')
 
     if (window.location.href == 'https://forum.greysnet.com/' || window.location.href == 'https://forum.greysnet.com') {
+        console.log("showing top categories")
         if (topCategories != null) {
             if (mainOutlet != null) {
                 topCategories.parentElement.removeChild(topCategories);
