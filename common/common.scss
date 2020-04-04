@@ -121,3 +121,31 @@ $menuColor: #5caeb1;
     }
 }
 
+
+
+/// hide posting features
+
+.discourse-no-touch .topic-body .actions .fade-out {
+    display: none;
+}
+
+.topic-map {
+    display: none;
+}
+
+nav.post-controls button.bookmark {
+    display: none;
+}
+
+#topic-title h1 a {
+    font-size: 1.7em;
+    display: block;
+}
+
+#topic-title .title-wrapper a.topic-featured-link {
+    display: none;
+}
+
+.widget-button .btn-flat .share .no-text .btn-icon {
+    display: none;
+}
