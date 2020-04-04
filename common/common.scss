@@ -24,7 +24,7 @@ $secondaryColor: #3d6374;
 }
 
 .d-header>.wrap {
-    margin-top: 50pt;
+    margin-top: 22pt;
     display: inline-block;
     align-items: initial;
 }
@@ -223,4 +223,8 @@ p small {
     font-size: 0.77em;
     color: white;
     font-weight: 300;
+}
+
+.topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title {
+    font-size: 1.2em;
 }
