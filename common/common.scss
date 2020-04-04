@@ -1,4 +1,5 @@
 $menuColor: #5caeb1;
+$secondaryColor: #3d6374;
 
 .d-header #site-text-logo {
     text-transform: lowercase;
@@ -150,10 +151,20 @@ button.widget-button.btn-flat.share.no-text.btn-icon {
     display: none;
 }
 
-.timeline-footer-controls {
+.timeline-container .topic-timeline .timeline-footer-controls {
     display: none;
 }
 
 button#topic-footer-button-share-and-invite {
     display: none;
+}
+
+.topic-list .topic-featured-link {
+    display: none;
+}
+
+.custom-header-links .headerLink a {
+    padding: 15px 1.5em;
+    font-size: 1.42em;
+    color: $secondaryColor;
 }
