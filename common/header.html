@@ -53,20 +53,7 @@
 
 <script>
 
-window.onload = function() {
-    var tagline = document.getElementById('tagline')
-    var wrap = document.getElementsByClassName('wrap')
-
-    if (tagline != null) {
-        if (wrap != null) {
-            if (wrap.length > 0) {
-                tagline.parentElement.removeChild(tagline);
-                tagline.style.display = "block"
-                wrap[0].appendChild(tagline)
-            }
-        }
-    }
-
+function addTopCategories() {
     var topCategories = document.getElementById('topCategories')
     var mainOutlet = document.getElementById('main-outlet')
 
@@ -82,22 +69,8 @@ window.onload = function() {
     }
 }
 
-$( document ).ajaxComplete(function() {
-
+function showTopCategories() {
     var topCategories = document.getElementById('topCategories')
-    var mainOutlet = document.getElementById('main-outlet')
-
-    console.log("showing top categories")
-    if (topCategories != null) {
-        if (mainOutlet != null) {
-            if (!topCategories.classList.contains('added')) {
-                topCategories.parentElement.removeChild(topCategories);
-                mainOutlet.insertBefore(topCategories, mainOutlet.firstChild)
-                topCategories.classList.add('added')
-            }
-        }
-    }
-
     if (window.location.href == 'https://forum.greysnet.com/' || window.location.href == 'https://forum.greysnet.com') {
         console.log("showing top categories")
         topCategories.style.display = 'block'
@@ -105,6 +78,30 @@ $( document ).ajaxComplete(function() {
         console.log("hiding top categories")
         topCategories.style.display = 'none'
     }
+}
+
+window.onload = function() {
+    var tagline = document.getElementById('tagline')
+    var wrap = document.getElementsByClassName('wrap')
+
+    if (tagline != null) {
+        if (wrap != null) {
+            if (wrap.length > 0) {
+                tagline.parentElement.removeChild(tagline);
+                tagline.style.display = "block"
+                wrap[0].appendChild(tagline)
+            }
+        }
+    }
+
+    addTopCategories()
+    showTopCategories()
+}
+
+$( document ).ajaxComplete(function() {
+
+    addTopCategories()
+    showTopCategories()
 }); 
 
 
