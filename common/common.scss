@@ -21,12 +21,6 @@ $menuColor: #5caeb1;
     margin-top: 50pt;
     display: inline-block;
     align-items: initial;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.wrap {
-    max-width: 1300px;
 }
 
 .d-header .title {
@@ -46,4 +40,42 @@ $menuColor: #5caeb1;
 
 .d-header-icons {
     display: inline-block;
+}
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 1330px) {
+    .wrap {
+        max-width: 1300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrap {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrap {
+        max-width: 960px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .wrap {
+        max-width: 720px;
+    }
+    
+}
+@media (min-width: 576px) {
+    .wrap {
+        max-width: 540px;
+    }
 }
