@@ -376,12 +376,16 @@ header.b-header.clearfix {
 
 }
 
+.b-header nav.links {
+    float: right;
+}
+
 .b-header #brand-text-logo {
     font-size: 2em;
     color: $menuColor;
 }
 
 .b-header .nav-pills>li>a {
-    color: $secondaryColor;
-    font-size: 1.4em;
+    color: $secondaryColor !important;
+    font-size: 1.4em !important;
 }
