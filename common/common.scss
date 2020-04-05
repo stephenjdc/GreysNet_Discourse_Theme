@@ -382,6 +382,7 @@ header.b-header.clearfix {
 
 .b-header nav.links {
     float: right !important;
+    padding-top: 20pt;
 }
 
 #brand-text-logo {
@@ -436,4 +437,8 @@ header.b-header.clearfix {
 
 .btn-small {
     font-size: 1.2em;
+}
+
+.d-header button.sign-up-button {
+    display: inline-block !important;
 }
