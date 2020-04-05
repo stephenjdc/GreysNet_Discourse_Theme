@@ -356,3 +356,23 @@ div#topCategories {
 .select-kit.combo-box.category-drop {
     display: none;
 }
+
+h1#site-text-logo {
+    display: none;
+}
+
+
+// new navbar stuff
+
+.b-header {
+    background-color: transparent;
+}
+
+.b-header .title a {
+    font-size: 2em;
+    color: $menuColor;
+}
+
+.b-header nav.links a {
+    color: $secondaryColor;
+}
