@@ -402,6 +402,14 @@ header.b-header.clearfix {
 }
 
 .ember-application .d-header {
-    margin-top: 0;
+    margin-top: 0 !important;
+}
 
+.d-header>.wrap {
+    margin-top: 0 !important;
+}
+
+img.avatar {
+    width: 50pt !important;
+    height: 50pt !important;
 }
