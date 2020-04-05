@@ -407,7 +407,7 @@ header.b-header.clearfix {
 
 .d-header>.wrap {
     margin-top: 0 !important;
-    max-width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px) !important;
     width: 1110px;
 }
 
@@ -418,8 +418,4 @@ header.b-header.clearfix {
 
 .topic-post-badges {
     display: none;
-}
-
-.d-header>.wrap {
-    width: 80% !important;
 }
