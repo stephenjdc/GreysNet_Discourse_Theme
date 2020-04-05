@@ -313,12 +313,6 @@ div#topCategories {
     /* text-align: right; */
 }
 
-.searchBox {
-    /* display: flex;
-    width: 35%;
-    min-width: 200pt; */
-}
-
 #searchInput {
     width: 55%;
     padding: 12px 18px;
@@ -327,7 +321,6 @@ div#topCategories {
 }
 
 #searchButton {
-    padding: 14px 24px 9pt;
     text-align: center;
     font-weight: 500;
     color: #fff;
@@ -341,8 +334,7 @@ div#topCategories {
     cursor: pointer;
     -webkit-appearance: button;
     margin-left: -4pt;
-    padding: 18.5pt 20pt 18.5pt;
-    /* margin-top: -10pt; */
+    padding: 18pt 20pt 17.5pt;    /* margin-top: -10pt; */
     display: inline-block;
     vertical-align: 4pt;
     background-color: $menuColor;

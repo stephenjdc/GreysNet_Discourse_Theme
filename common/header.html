@@ -57,7 +57,7 @@
                 <form role="search" method="get" class="searchBox" action="https://greysnet.com/">
                         <input class='searchInput' type="text" class="text" placeholder="Search" id='searchInput' name="s" />
                     
-                        <button id='searchButton' type="submit" name="submit_search" class="button-search" style='margin-left: -4pt; padding: 14px 24px 9pt'>
+                        <button id='searchButton' type="submit" name="submit_search" class="button-search" style='margin-left: -4pt;'>
                             <i class="fa fa-search"></i>
                         </button>
                 </form>
@@ -99,7 +99,7 @@ function showTopCategories() {
 
 window.onload = function() {
     var tagline = document.getElementById('tagline')
-    var wrap = document.getElementsByClassName('wrap')
+    var wrap = document.getElementById('ember8').getElementsByClassName('wrap')
 
     if (tagline != null) {
         if (wrap != null) {
