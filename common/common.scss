@@ -397,8 +397,8 @@ header.b-header.clearfix {
 }
 
 .b-header .nav-pills>li>a:hover {
-    color: inherit;
-    background-color: inherit;
+    color: inherit !important;
+    background-color: inherit !important;
 }
 
 .ember-application .d-header {
