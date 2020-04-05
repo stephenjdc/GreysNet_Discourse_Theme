@@ -364,6 +364,10 @@ h1#site-text-logo {
 
 // new navbar stuff
 
+.brand-header {
+    margin-top: 34pt;
+}
+
 .b-header {
 }
 
@@ -377,12 +381,13 @@ header.b-header.clearfix {
 }
 
 .b-header nav.links {
-    float: right;
+    float: right !important;
 }
 
-.b-header #brand-text-logo {
-    font-size: 2em;
+#brand-text-logo {
+    font-size: 3.5em;
     color: $menuColor;
+    letter-spacing: -1.33px;
 }
 
 .b-header .nav-pills>li>a {
