@@ -235,7 +235,7 @@ p small {
 
 .topCategories {
     display: block;
-    margin-bottom: 80pt;
+    // margin-bottom: 80pt;
     align-content: center;
     text-align: center;
 }
@@ -291,12 +291,16 @@ div#topCategories {
     color: white;
 }
 
+
+//  search area
 .bigHeroImageDiv {
     width: 100%;
     padding-top: 14%;
     background-size: cover;
     background-position: center;
     background-image: url(https://greysnet.com/wp-content/uploads/2020/03/Tai-Chi-Image-3.jpg);
+    margin-top: 20pt;
+
 }
 
 
@@ -315,6 +319,24 @@ div#topCategories {
     min-width: 200pt; */
 }
 
-input[type="text"] {
+#searchInput {
     width: 55%;
+    padding: 12px 18px;
+}
+
+#searchButton {
+    padding: 14px 24px 9pt;
+    text-align: center;
+    background-color: #84a220;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    cursor: pointer;
+    -webkit-appearance: button;
 }
