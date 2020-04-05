@@ -425,6 +425,10 @@ header.b-header.clearfix {
     color: $secondaryColor;
 }
 
+.d-header .login-button .fa, .d-header .sign-up-button .fa {
+    color: $secondaryColor;
+}
+
 .discourse-no-touch .btn-primary:hover, .discourse-no-touch .btn-primary.btn-hover {
     background: $secondaryColor;
     color: white;
