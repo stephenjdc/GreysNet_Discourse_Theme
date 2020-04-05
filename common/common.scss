@@ -442,3 +442,13 @@ header.b-header.clearfix {
 .d-header button.sign-up-button {
     display: inline-block !important;
 }
+
+.b-header .panel>ul.icons a, .b-header .panel>ul.icons [class^="fa fa-"] {
+    margin-right: 30pt;
+}
+
+@media (max-width: 400pt) {
+    .d-header .header-buttons {
+        margin-top: 20pt;
+    }
+}
