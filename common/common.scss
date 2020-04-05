@@ -365,14 +365,23 @@ h1#site-text-logo {
 // new navbar stuff
 
 .b-header {
-    background-color: transparent;
 }
 
-.b-header .title a {
+header.b-header.clearfix {
+    background-color: transparent;
+
+}
+
+.b-header .title {
+
+}
+
+.b-header #brand-text-logo {
     font-size: 2em;
     color: $menuColor;
 }
 
-.b-header nav.links a {
+.b-header .nav-pills>li>a {
     color: $secondaryColor;
+    font-size: 1.4em;
 }
