@@ -103,7 +103,7 @@ window.onload = function() {
     var parentItem = document.getElementsByClassName('b-header')
     
     if (parentItem.length > 0) {
-        var wrapClass = getElementsByClassName('title');
+        var wrapClass = parentItem[0].getElementsByClassName('title');
         if (wrapClass.length > 0) {
             var wrap = wrapClass[0]
             if (tagline != null) {
