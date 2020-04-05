@@ -82,7 +82,7 @@ function addTopCategories() {
         if (mainOutlet != null) {
             if (!topCategories.classList.contains('added')) {
                 topCategories.parentElement.removeChild(topCategories);
-                mainOutlet.insertBefore(topCategories, mainOutlet.firstChild.childNodes[2])
+                mainOutlet.firstChild.insertBefore(topCategories, mainOutlet.firstChild.childNodes[2])
                 // mainOutlet.insertBefore(topCategories, document.getElementById('main-outlet'))
                 topCategories.classList.add('added')
             }
