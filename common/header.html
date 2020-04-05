@@ -4,6 +4,7 @@
     font-size: 1.4em;
     color: #666666;
     display: none;
+    margin-top: 20pt;
 ">The voice of older people online</div>
 
 
@@ -99,16 +100,23 @@ function showTopCategories() {
 
 window.onload = function() {
     var tagline = document.getElementById('tagline')
-    var wrap = document.getElementById('ember8').getElementsByClassName('wrap')
-
-    if (tagline != null) {
-        if (wrap != null) {
-            if (wrap.length > 0) {
-                tagline.parentElement.removeChild(tagline);
-                tagline.style.display = "block"
-                wrap[0].appendChild(tagline)
+    var parentItem = document.getElementsByClassName('b-header')
+    
+    if (parentItem.length > 0) {
+        var wrapClass = getElementsByClassName('title');
+        if (wrapClass.length > 0) {
+            var wrap = wrapClass[0]
+            if (tagline != null) {
+                if (wrap != null) {
+                    if (wrap.length > 0) {
+                        tagline.parentElement.removeChild(tagline);
+                        tagline.style.display = "block"
+                        wrap[0].appendChild(tagline)
+                    }
+                }
             }
         }
+
     }
 
     addTopCategories()
