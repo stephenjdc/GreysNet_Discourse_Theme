@@ -336,13 +336,13 @@ div#topCategories {
 }
 
 
-ol#ember315 {
-    display: none;
-}
+// ol#ember315 {
+//     display: none;
+// }
 
-ol#ember23 {
-    display: none;
-}
+// ol#ember23 {
+//     display: none;
+// }
 
 .category-logo.aspect-image {
     display: none;
@@ -351,4 +351,8 @@ ol#ember23 {
 .category-title-description {
     font-size: 1.3em;
     font-weight: 300;
+}
+
+.select-kit.combo-box.category-drop {
+    display: none;
 }
