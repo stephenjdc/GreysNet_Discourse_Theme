@@ -419,3 +419,17 @@ header.b-header.clearfix {
 .topic-post-badges {
     display: none;
 }
+
+.btn-primary {
+    background: transparent;
+    color: $secondaryColor;
+}
+
+.discourse-no-touch .btn-primary:hover, .discourse-no-touch .btn-primary.btn-hover {
+    background: $secondaryColor;
+    color: white;
+}
+
+.btn-small {
+    font-size: 1.2em;
+}
