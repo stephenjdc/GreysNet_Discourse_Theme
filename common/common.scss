@@ -290,3 +290,34 @@ div#topCategories {
 .categoryButton a:visited {
     color: white;
 }
+
+.bigHeroImageDiv {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    padding-top: 14%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://greysnet.com/wp-content/uploads/2020/03/Tai-Chi-Image-3.jpg);
+}
+
+
+.search-header {
+    padding-bottom: 25pt;;
+}
+
+.searchContainer {
+    margin-bottom: 30pt;
+    /* text-align: right; */
+}
+
+.searchBox {
+    /* display: flex;
+    width: 35%;
+    min-width: 200pt; */
+}
+
+input[type="text"] {
+    width: 55%;
+}
