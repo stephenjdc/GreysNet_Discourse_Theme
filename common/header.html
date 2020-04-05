@@ -108,11 +108,9 @@ window.onload = function() {
             var wrap = wrapClass[0]
             if (tagline != null) {
                 if (wrap != null) {
-                    if (wrap.length > 0) {
-                        tagline.parentElement.removeChild(tagline);
-                        tagline.style.display = "block"
-                        wrap.appendChild(tagline)
-                    }
+                    tagline.parentElement.removeChild(tagline);
+                    tagline.style.display = "block"
+                    wrap.appendChild(tagline)
                 }
             }
         }
