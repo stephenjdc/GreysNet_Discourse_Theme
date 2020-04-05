@@ -321,27 +321,12 @@ div#topCategories {
 }
 
 #searchButton {
-    text-align: center;
-    font-weight: 500;
-    color: #fff;
-    display: inline-block;
     border: none;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 24px;
-    cursor: pointer;
-    -webkit-appearance: button;
     margin-left: -4pt;
     padding: 18pt 20pt 17.5pt;    /* margin-top: -10pt; */
-    display: inline-block;
     vertical-align: 4pt;
     background-color: $menuColor;
     background-image: url(https://greysnet.com/wp-content/uploads/search.png);
-}
-
-.fa {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
+    background-size: cover;
+    background-position: center;
 }
