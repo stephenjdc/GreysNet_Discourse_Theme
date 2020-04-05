@@ -1,12 +1,12 @@
 $menuColor: #5caeb1;
 $secondaryColor: #3d6374;
 
-.d-header #site-text-logo {
-    text-transform: lowercase;
-    font-size: 3.4666em;
-    letter-spacing: -1pt;
-    color: $menuColor;
-}
+// .d-header #site-text-logo {
+//     text-transform: lowercase;
+//     font-size: 3.4666em;
+//     letter-spacing: -1pt;
+//     color: $menuColor;
+// }
 
 .d-header {
     background-color: transparent;
@@ -393,4 +393,15 @@ header.b-header.clearfix {
 .b-header .nav-pills>li>a {
     color: $secondaryColor !important;
     font-size: 1.4em !important;
+    padding: 15px 1.5em !important;
+}
+
+.b-header .nav-pills>li>a:hover {
+    color: inherit;
+    background-color: inherit;
+}
+
+.ember-application .d-header {
+    margin-top: 0;
+
 }
