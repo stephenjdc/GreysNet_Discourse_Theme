@@ -8,7 +8,7 @@
 ">The voice of older people online</div>
 
 
-<div id='topCategories'>
+<div id='topCategories' style='display: none'>
 
     <div class='bigHeroImageDiv'>
         <div class='searchContainer wrap'>
@@ -65,30 +65,33 @@ function showTopCategories() {
 
 window.onload = function() {
     var tagline = document.getElementById('tagline')
-    var parentItem = document.getElementsByClassName('b-header')
+    // var parentItem = document.getElementsByClassName('b-header')
+    var parentItem = document.getElementsByClassName('brand-header')
+
     
     if (parentItem.length > 0) {
-        var wrapClass = parentItem[0].getElementsByClassName('title');
-        if (wrapClass.length > 0) {
-            var wrap = wrapClass[0]
+        var wrapParent = parentItem[0]
+        var wrapClass = wrapParent.parentElement;
+        // if (wrapClass.length > 0) {
+        //     var wrap = wrapClass[0]
             if (tagline != null) {
                 if (wrap != null) {
+                    wrapClass.appendChild(tagline)
                     tagline.parentElement.removeChild(tagline);
                     tagline.style.display = "block"
-                    wrap.appendChild(tagline)
                 }
             }
-        }
+        // }
 
     }
 
-    // addTopCategories()
+    addTopCategories()
     showTopCategories()
 }
 
 $( document ).ajaxComplete(function() {
 
-    // addTopCategories()
+    addTopCategories()
     showTopCategories()
 }); 
 
