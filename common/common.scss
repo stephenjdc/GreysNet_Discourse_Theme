@@ -447,6 +447,10 @@ header.b-header.clearfix {
     margin-right: 30pt;
 }
 
+.b-header {
+    height: auto;
+}
+
 @media (max-width: 400pt) {
     .d-header .header-buttons {
         margin-top: 20pt;
