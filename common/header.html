@@ -41,9 +41,9 @@ function addTopCategories() {
 
             if (!topCategories.classList.contains('added') && brandHeaders != null) {
                 // brandHeader.
+                topCategories.parentElement.removeChild(topCategories);
                 brandHeader.appendChild(topCategories);
 
-                topCategories.parentElement.removeChild(topCategories);
                 topCategories.classList.add('added')
             }
         }
