@@ -104,27 +104,24 @@ $( document ).ajaxComplete(function() {
         const path = window.location.pathname;
         const controller = container.lookup('controller:navigation/category');
 
-        # if(/^\/c\//.test(path)) {
-
-            html() {
-                return "
-                <div id='topCategories' style='display: none'>
-                    <div class='bigHeroImageDiv'>
-                        <div class='searchContainer wrap'>
-                            <div class='search-header'>
-                                <form role='search' method='get' class='searchBox' action='https://forum.greysnet.com/search'>
-                                        <input class='searchInput' type='text' class='text' placeholder='Search' id='searchInput' name='q' />
-                                    
-                                        <button id='searchButton' type='submit' name='submit_search' class='button-search' style='margin-left: -4pt;'>
-                                            <i class='fa fa-search></i>
-                                        </button>
-                                </form>
-                            </div>
+        html() {
+            return "
+            <div id='topCategories' style='display: none'>
+                <div class='bigHeroImageDiv'>
+                    <div class='searchContainer wrap'>
+                        <div class='search-header'>
+                            <form role='search' method='get' class='searchBox' action='https://forum.greysnet.com/search'>
+                                    <input class='searchInput' type='text' class='text' placeholder='Search' id='searchInput' name='q' />
+                                
+                                    <button id='searchButton' type='submit' name='submit_search' class='button-search' style='margin-left: -4pt;'>
+                                        <i class='fa fa-search></i>
+                                    </button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                ";
-            # }
+            </div>
+            ";
         );
     }
   }),
