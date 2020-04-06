@@ -125,22 +125,6 @@ $( document ).ajaxComplete(function() {
                 </div>
                 ";
             # }
-
-        $("body").addClass("category-header");
-
-        return h('div.category-title-header' + " .category-banner-" + category.slug, {
-            "attributes" : {
-                "style" : "border-top: 30pt solid #" + category.color + "; color: #000000;"
-            }
-        },
-        
-        h('div.category-title-contents', [
-        ifProtected(),
-        
-        h('h1', category.name),
-        h('div.category-title-description',catDesc())
-        ]),
-
         );
     }
   }),
