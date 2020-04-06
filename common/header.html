@@ -64,15 +64,16 @@ function showTopCategories() {
     }
 }
 
+var listenerAdded = false
 function setUserIconListener() {
     var userIcon = document.getElementById('current-user');
     if (userIcon != null) {
-        if (!userIcon.classList.contains('listenerAdded')) {
+        if (!listenerAdded) {
             console.log("added user listener")
             userIcon.addEventListener('click', function() {
                 console.log("user icon clicked")
                 selectUserName();
-                userIcon.className += " listenerAdded"
+                listenerAdded = true;
             })
         }
     }
