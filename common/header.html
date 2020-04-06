@@ -68,8 +68,9 @@ function setUserIconListener() {
     var userIcon = document.getElementById('current-user');
     if (userIcon != null) {
         if (!userIcon.classList.contains('listenerAdded')) {
-
+            console.log("added user listener")
             userIcon.addEventListener('click', function() {
+                console.log("user icon clicked")
                 selectUserName();
                 userIcon.classList.add('listenerAdded')
             })
@@ -121,7 +122,7 @@ $( document ).ajaxComplete(function() {
 function selectUserName() {
     var links = document.getElementsByClassName('user-activity-link');
 
-    if (link != null) {
+    if (links != null) {
         var link = links[0]
         link.click();
     }
