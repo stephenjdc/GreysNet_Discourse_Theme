@@ -80,28 +80,14 @@ window.onload = function() {
 
     }
 
-    // addTopCategories()
-    // showTopCategories()
+    addTopCategories()
+    showTopCategories()
 }
 
 $( document ).ajaxComplete(function() {
 
-    // addTopCategories()
-    // showTopCategories()
+    addTopCategories()
+    showTopCategories()
 }); 
 
 </script>
-
-<script type="text/discourse-plugin" version="0.8">
-  import { createWidget } from 'discourse/widgets/widget';
-
-  createWidget('search-hero-widget', {
-  tagName: 'div#topCategories',
-
-  html() {
-    return "hello world";
-  }
-});
-
-</script>
-
