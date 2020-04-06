@@ -41,7 +41,7 @@ function addTopCategories() {
 
             if (!topCategories.classList.contains('added') && brandHeaders != null) {
                 // brandHeader.
-                brandHeader.parentElement.parentElement.parentElement.parentElement.appendChild(topCategories);
+                brandHeader.appendChild(topCategories);
 
                 topCategories.parentElement.removeChild(topCategories);
                 topCategories.classList.add('added')
