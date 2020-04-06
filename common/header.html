@@ -104,7 +104,7 @@ $( document ).ajaxComplete(function() {
         const path = window.location.pathname;
         const controller = container.lookup('controller:navigation/category');
 
-        if(/^\/c\//.test(path)) {
+        # if(/^\/c\//.test(path)) {
 
             html() {
                 return "
@@ -124,22 +124,22 @@ $( document ).ajaxComplete(function() {
                     </div>
                 </div>
                 ";
+            # }
+
+        $("body").addClass("category-header");
+
+        return h('div.category-title-header' + " .category-banner-" + category.slug, {
+            "attributes" : {
+                "style" : "border-top: 30pt solid #" + category.color + "; color: #000000;"
             }
-
-        # $("body").addClass("category-header");
-
-        # return h('div.category-title-header' + " .category-banner-" + category.slug, {
-        #     "attributes" : {
-        #         "style" : "border-top: 30pt solid #" + category.color + "; color: #000000;"
-        #     }
-        # },
+        },
         
-        # h('div.category-title-contents', [
-        # ifProtected(),
+        h('div.category-title-contents', [
+        ifProtected(),
         
-        # h('h1', category.name),
-        # h('div.category-title-description',catDesc())
-        # ]),
+        h('h1', category.name),
+        h('div.category-title-description',catDesc())
+        ]),
 
         );
     }
