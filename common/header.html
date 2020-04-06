@@ -52,12 +52,14 @@ function addTopCategories() {
 
 function showTopCategories() {
     var topCategories = document.getElementById('topCategories')
-    if (window.location.href == 'https://forum.greysnet.com/' || window.location.href == 'https://forum.greysnet.com') {
-        console.log("showing top categories")
-        topCategories.style.display = 'block'
-    } else {
-        console.log("hiding top categories")
-        topCategories.style.display = 'none'
+    if (topCategories.classList.contains('added')) {
+        if (window.location.href == 'https://forum.greysnet.com/' || window.location.href == 'https://forum.greysnet.com') {
+            console.log("showing top categories")
+            topCategories.style.display = 'block'
+        } else {
+            console.log("hiding top categories")
+            topCategories.style.display = 'none'
+        }
     }
 }
 
