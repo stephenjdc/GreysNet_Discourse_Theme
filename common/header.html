@@ -96,39 +96,53 @@ $( document ).ajaxComplete(function() {
   const container = Discourse.__container__;
   const { h } = require('virtual-dom');
   const { iconNode } = require("discourse-common/lib/icon-library");
-  let lockIcon = iconNode('lock');
 
   api.createWidget('search-hero-widget', {
       tagName: 'span',
       html(attrs, state) {
 
-          const path = window.location.pathname;
-          const controller = container.lookup('controller:navigation/category');
+        const path = window.location.pathname;
+        const controller = container.lookup('controller:navigation/category');
 
-          if(/^\/c\//.test(path)) {
-            #   const hideMobile = (!settings.show_mobile && this.site.mobileView) ? "true" : hideMobile;
-            #   const subCat = (!settings.show_subcategory && category.parentCategory) ? "true" : subCat;
-            #   const noDesc = (settings.hide_if_no_description && !category.description_text) ? "true" : noDesc;
+        if(/^\/c\//.test(path)) {
 
-            #   if(!isException && !noDesc && !subCat && !hideMobile) {
-                  $("body").addClass("category-header");
+            html() {
+                return "
+                <div id='topCategories' style='display: none'>
+                    <div class='bigHeroImageDiv'>
+                        <div class='searchContainer wrap'>
+                            <div class='search-header'>
+                                <form role='search' method='get' class='searchBox' action='https://forum.greysnet.com/search'>
+                                        <input class='searchInput' type='text' class='text' placeholder='Search' id='searchInput' name='q' />
+                                    
+                                        <button id='searchButton' type='submit' name='submit_search' class='button-search' style='margin-left: -4pt;'>
+                                            <i class='fa fa-search></i>
+                                        </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ";
+            }
 
-                  return h('div.category-title-header' + " .category-banner-" + category.slug, {
-                      "attributes" : {
-                          "style" : "border-top: 30pt solid #" + category.color + "; color: #000000;"
-                      }
-                  }, h('div.category-title-contents', [
-                  ifProtected(),
-                  h('h1', category.name),
-                  h('div.category-title-description',catDesc())
-                  ]),
+        # $("body").addClass("category-header");
 
-                  );
-            #   }
-        #   } else {
-            #   $("body").removeClass("category-header");
-        #   }
-      }
+        # return h('div.category-title-header' + " .category-banner-" + category.slug, {
+        #     "attributes" : {
+        #         "style" : "border-top: 30pt solid #" + category.color + "; color: #000000;"
+        #     }
+        # },
+        
+        # h('div.category-title-contents', [
+        # ifProtected(),
+        
+        # h('h1', category.name),
+        # h('div.category-title-description',catDesc())
+        # ]),
+
+        );
+    }
   }),
 
   api.decorateWidget('search-hero-widget:after', helper => {
