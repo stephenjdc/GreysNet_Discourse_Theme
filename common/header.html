@@ -93,10 +93,6 @@ $( document ).ajaxComplete(function() {
 </script>
 
 <script type="text/discourse-plugin" version="0.8">
-<!-- <script> -->
-//   const container = Discourse.__container__;
-//   const { h } = require('virtual-dom');
-//   const { iconNode } = require("discourse-common/lib/icon-library");
   import { createWidget } from 'discourse/widgets/widget';
 
   createWidget('search-hero-widget', {
@@ -108,13 +104,4 @@ $( document ).ajaxComplete(function() {
 });
 
 </script>
-
-<script
-  type="text/x-handlebars"
-  data-template-name="/connectors/below-site-header/search-hero-widget"
->
-  {{mount-widget widget="search-hero-widget"}}
-</script>
-
-
 
