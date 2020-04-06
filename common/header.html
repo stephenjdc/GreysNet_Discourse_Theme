@@ -64,6 +64,19 @@ function showTopCategories() {
     }
 }
 
+function setUserIconListener() {
+    var userIcon = document.getElementById('current-user');
+    if (userIcon != null) {
+        if (!userIcon.classList.contains('listenerAdded')) {
+
+            userIcon.addEventListener('click', function() {
+                selectUserName();
+                userIcon.classList.add('listenerAdded')
+            })
+        }
+    }
+}
+
 window.onload = function() {
     var tagline = document.getElementById('tagline')
     var parentItem = document.getElementsByClassName('b-header')
@@ -86,10 +99,12 @@ window.onload = function() {
 
     addTopCategories()
     showTopCategories()
+    setUserIconListener()
 
     setTimeout(function() {
         addTopCategories()
         showTopCategories()
+        setUserIconListener()
     }, 200);
 
 }
@@ -98,6 +113,18 @@ $( document ).ajaxComplete(function() {
 
     addTopCategories()
     showTopCategories()
+    setUserIconListener()
 }); 
+
+
+
+function selectUserName() {
+    var links = document.getElementsByClassName('user-activity-link');
+
+    if (link != null) {
+        var link = links[0]
+        link.click();
+    }
+}
 
 </script>
