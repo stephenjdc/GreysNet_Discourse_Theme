@@ -118,12 +118,16 @@ $( document ).ajaxComplete(function() {
 
 
 function selectUserName() {
-    var links = document.getElementsByClassName('d-label');
 
-    if (links != null) {
-        var link = links[0]
-        link.click();
-    }
+    setTimeout(function() {
+        var links = document.getElementsByClassName('d-label');
+        if (links != null) {
+            var link = links[0]
+            link.click();
+        }
+    }, 200);
+
+
 }
 
 </script>
