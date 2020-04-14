@@ -422,8 +422,9 @@ header.b-header.clearfix {
 }
 
 .btn-primary {
-    background: transparent;
-    color: $secondaryColor;
+    background: $secondaryColor;
+    color: white;
+
 }
 
 .d-header .login-button .fa, .d-header .sign-up-button .fa {
