@@ -466,3 +466,7 @@ header.b-header.clearfix {
     height: 35pt;
     margin-right: 20pt;
 }
+
+.b-header .title a {
+    pointer-events: none;
+}
